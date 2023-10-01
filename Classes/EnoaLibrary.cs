@@ -19,25 +19,22 @@ namespace LDC.ClassesLibrary
     /// унаследованного от SignContextInitializer, с преопределенным методом Initialize,
     /// если необходимо изменить базу знамений
     /// </summary>
-    public class ClassesLibrary
+    public class EnoaLibrary
     {
-        private string ConnectionString { get; set; }
         /// <summary>
-        /// Конструктор по умолчанию, в connectionString можно передать путь до файла .bd, если файл не будет найден и isNeedInit true, будет инициализирована новая база знамений
+        /// Конструктор по умолчанию
         /// </summary>
-        /// <param name="connectionString">Строка подключения к БД</param>
         /// <param name="signContextInitializer">Экземпляр класса инициализации контекста базы, если null - используется инициализация по-умолчанию</param>
         /// <param name="isNeedInit">Нужна ли инициализация базы, по-умолчанию нет</param>
-        public ClassesLibrary(string connectionString = "data source=(localdb)\\MSSQLLocalDB;Initial Catalog=userstore;Integrated Security=True;", SignContextInitializer signContextInitializer = null, bool isNeedInit = false)
+        public EnoaLibrary(SignContextInitializer signContextInitializer = null, bool isNeedInit = false)
         {
-            ConnectionString = connectionString;
             try
             {
                 if (signContextInitializer == null)
                     signContextInitializer = new SignContextInitializer();
 
                 if (isNeedInit)
-                    signContextInitializer.Initialize(new SignContext(connectionString));
+                    signContextInitializer.Initialize(new SignContext());
             }
             catch(Exception ex)
             {
@@ -54,7 +51,7 @@ namespace LDC.ClassesLibrary
             Response response = new Response();
             try
             {
-                using (SignContext signContext = new SignContext(ConnectionString))
+                using (SignContext signContext = new SignContext())
                 {
                     List<Sign> signs = signContext.Signs.ToList();
                     response.Result = signs;
@@ -77,22 +74,22 @@ namespace LDC.ClassesLibrary
             Response response = new Response();
             try
             {
-                using (SignContext signContext = new SignContext(ConnectionString))
+                using (SignContext signContext = new SignContext())
                 {
                     //Sign sign = signContext.Signs.SingleOrDefault(sign => 
                     //sign.Bunti == Bunti &&
                     //sign.Ayur == Ayur &&
                     //sign.Dodor == Dodor &&
                     //sign.Takhar == Takhar);
-                    Sign sign = (Sign)(from s in signContext.Signs
+                    List<Sign> sign = (from s in signContext.Signs
                                 where s.Bunti == Bunti
                                 && s.Ayur == Ayur
                                 && s.Dodor == Dodor
                                 && s.Takhar == Takhar
-                                select s);
+                                select s).ToList();
 
                     if (sign != null)
-                        response.Result = sign;
+                        response.Result = sign.FirstOrDefault();
                     else
                     {
                         response.ErrorCode = 2;
@@ -119,7 +116,7 @@ namespace LDC.ClassesLibrary
             Response response = new Response();
             try
             {
-                using (SignContext signContext = new SignContext(ConnectionString))
+                using (SignContext signContext = new SignContext())
                 {
                     signContext.Signs.Add(sign);
                     signContext.SaveChanges();
