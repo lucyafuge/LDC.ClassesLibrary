@@ -56,6 +56,8 @@
     <Compile Include="Classes\SignContextInitializer.cs" />
     <Compile Include="Data\Sign.cs" />
     <Compile Include="Data\SignContext.cs" />
+    <Compile Include="Data\Signs\ThreeLeggedDodor_03.cs" />
+    <Compile Include="Data\Signs\StretchedThreads_02.cs" />
     <Compile Include="Data\Signs\RottingShadow_01.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

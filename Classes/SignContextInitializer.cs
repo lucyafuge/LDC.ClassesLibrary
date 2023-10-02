@@ -41,6 +41,8 @@ namespace LDC.ClassesLibrary.Classes
         internal virtual void Initialize(SignContext signContext)
         {
             signs.Add(new RottingShadow_01());
+            signs.Add(new StretchedThreads_02());
+            signs.Add(new ThreeLeggedDodor_03());
 
             using (signContext)
             {
