@@ -56,6 +56,13 @@
     <Compile Include="Classes\SignContextInitializer.cs" />
     <Compile Include="Data\Sign.cs" />
     <Compile Include="Data\SignContext.cs" />
+    <Compile Include="Data\Signs\MukamaStrings_10.cs" />
+    <Compile Include="Data\Signs\BaturinasGifts_09.cs" />
+    <Compile Include="Data\Signs\RedSunBlades_08.cs" />
+    <Compile Include="Data\Signs\SunnyPestilence_07.cs" />
+    <Compile Include="Data\Signs\GoldenFruit_06.cs" />
+    <Compile Include="Data\Signs\ToadsSong_05.cs" />
+    <Compile Include="Data\Signs\CripplingMoon_04.cs" />
     <Compile Include="Data\Signs\ThreeLeggedDodor_03.cs" />
     <Compile Include="Data\Signs\StretchedThreads_02.cs" />
     <Compile Include="Data\Signs\RottingShadow_01.cs" />

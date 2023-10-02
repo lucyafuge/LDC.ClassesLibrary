@@ -43,6 +43,13 @@ namespace LDC.ClassesLibrary.Classes
             signs.Add(new RottingShadow_01());
             signs.Add(new StretchedThreads_02());
             signs.Add(new ThreeLeggedDodor_03());
+            signs.Add(new CripplingMoon_04());
+            signs.Add(new ToadsSong_05());
+            signs.Add(new GoldenFruit_06());
+            signs.Add(new SunnyPestilence_07());
+            signs.Add(new RedSunBlades_08());
+            signs.Add(new BaturinasGifts_09());
+            signs.Add(new MukamaStrings_10());
 
             using (signContext)
             {
