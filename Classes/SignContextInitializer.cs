@@ -50,6 +50,26 @@ namespace LDC.ClassesLibrary.Classes
             signs.Add(new RedSunBlades_08());
             signs.Add(new BaturinasGifts_09());
             signs.Add(new MukamaStrings_10());
+            signs.Add(new TwoLivers_11());
+            signs.Add(new DancingSpirits_12());
+            signs.Add(new BloodRain_13());
+            signs.Add(new DeadHands_14());
+            signs.Add(new HeavenWrath_15());
+            signs.Add(new BlueWindRibbons_16());
+            signs.Add(new OngonTraces_17());
+            signs.Add(new ThreeBrokenMoonlighters_18());
+            signs.Add(new ThreeTornTongues_19());
+            signs.Add(new Unbridled_20());
+            signs.Add(new FalseSun_21());
+            signs.Add(new ExtinguishedSpark_22());
+            signs.Add(new EightShamasHorsemen_23());
+            signs.Add(new BrokenCage_24());
+            signs.Add(new LonelyMoon_25());
+            signs.Add(new ShadowFangs_26());
+            signs.Add(new BrokenJester_27());
+            signs.Add(new LostBeast_28());
+            signs.Add(new BlinDutarMusician_29());
+
 
             using (signContext)
             {
