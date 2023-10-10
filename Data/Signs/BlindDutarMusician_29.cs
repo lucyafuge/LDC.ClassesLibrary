@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace LDC.ClassesLibrary.Classes.Signs
 {
-    public class BlinDutarMusician_29 : Sign
+    public class BlindDutarMusician_29 : Sign
     {
-        public BlinDutarMusician_29()
+        public BlindDutarMusician_29()
         {
             Name = "29. Слепой музыкант с дутаром";
             Description = "Один из небесных музыкантов, слепой старик с дутаром, — символ храбрости и наступления хороших времен.";

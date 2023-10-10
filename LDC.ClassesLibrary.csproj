@@ -56,7 +56,13 @@
     <Compile Include="Classes\SignContextInitializer.cs" />
     <Compile Include="Data\Sign.cs" />
     <Compile Include="Data\SignContext.cs" />
-    <Compile Include="Data\Signs\BlinDutarMusician_29.cs" />
+    <Compile Include="Data\Signs\GeniesRedShawl_35.cs" />
+    <Compile Include="Data\Signs\Rebirth_34.cs" />
+    <Compile Include="Data\Signs\ThreeNorthernStars_33.cs" />
+    <Compile Include="Data\Signs\CryingWind_32.cs" />
+    <Compile Include="Data\Signs\BaraskusRoad_31.cs" />
+    <Compile Include="Data\Signs\WindRacing_30.cs" />
+    <Compile Include="Data\Signs\BlindDutarMusician_29.cs" />
     <Compile Include="Data\Signs\LostBeast_28.cs" />
     <Compile Include="Data\Signs\BrokenJester_27.cs" />
     <Compile Include="Data\Signs\ShadowFangs_26.cs" />

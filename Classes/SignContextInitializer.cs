@@ -68,7 +68,13 @@ namespace LDC.ClassesLibrary.Classes
             signs.Add(new ShadowFangs_26());
             signs.Add(new BrokenJester_27());
             signs.Add(new LostBeast_28());
-            signs.Add(new BlinDutarMusician_29());
+            signs.Add(new BlindDutarMusician_29());
+            signs.Add(new WindRacing_30());
+            signs.Add(new BaraskusRoad_31());
+            signs.Add(new CryingWind_32());
+            signs.Add(new ThreeNorthernStars_33());
+            signs.Add(new Rebirth_34());
+            signs.Add(new GeniesRedShawl_35());
 
 
             using (signContext)

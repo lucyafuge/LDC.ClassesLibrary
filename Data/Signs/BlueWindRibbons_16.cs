@@ -20,7 +20,7 @@ namespace LDC.ClassesLibrary.Classes.Signs
             Bunti = 0;
             Ayur = 0;
             Dodor = 1;
-            Takhar = 4;
+            Takhar = 3;
          }
     }
 }
